@@ -1,7 +1,5 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import { IonApp, IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/react';
+import { IonApp, IonHeader, IonToolbar, IonTitle, IonContent, IonButton, IonSegment, IonSegmentButton, IonPage } from '@ionic/react';
 
 // IMPORTANT: Import core CSS in order to get proper rendering
 // This is the first tier of CSS
@@ -33,18 +31,14 @@ function App() {
         </IonToolbar>
       </IonHeader>
       <IonContent>
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <IonPage>
+          <IonSegment value="cappuccino">
+            <IonSegmentButton value="espresso">Espresso</IonSegmentButton>
+            <IonSegmentButton value="macchiato">Macchiato</IonSegmentButton>
+            <IonSegmentButton value="cappuccino">Cappuccino</IonSegmentButton>
+          </IonSegment>
+          <IonButton expand="full">Brew</IonButton>
+        </IonPage>
       </IonContent>
     </IonApp>
   );
