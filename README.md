@@ -1,5 +1,13 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+To run:
+Create a .env file
+`touch .env`
+set the PORT to 80 in the .env file
+`PORT=80`
+Run `npm install`
+Run `npm start`
+
 ## Available Scripts
 
 In the project directory, you can run:
